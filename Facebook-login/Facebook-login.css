@@ -1,0 +1,115 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Body background */
+body {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #1877f2;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Center login card */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* header height considered */
+}
+
+/* Login card */
+.login-card {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Form inputs */
+.login-card form input[type="text"],
+.login-card form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Login button */
+.login-card form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-card form button:hover {
+    background-color: #165ecf;
+}
+
+/* Forgot password link */
+.login-card a {
+    display: block;
+    margin: 10px 0;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-card a:hover {
+    text-decoration: underline;
+}
+
+/* Divider */
+.login-card hr {
+    margin: 20px 0;
+    border: 0.5px solid #ddd;
+}
+
+/* Create account button */
+.create-account {
+    width: 100%;
+    padding: 12px;
+    background-color: #42b72a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.create-account:hover {
+    background-color: #36a420;
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 400px) {
+    .login-card {
+        width: 90%;
+        padding: 20px;
+    }
+}
